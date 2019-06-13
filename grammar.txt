@@ -1,19 +1,21 @@
 <prog> -><mod>
-<body> -> <declaration> <select>
-<select> -> <assign> <input> <stmt> 
-<loops ->  <while> <cond>
-<mod> -> <private> <begin> <body> <break> 
-<mod> -> <public> <begin> <body> <break> 
-<mod> -> <protected> <begin> <body> <break> 
+<mod> -> <public> <begin> <stmts> <break>
+<stmts> -> <stmt> <stmts'> 
+<stmts'> -> <stmt> <stmts'>
+<stmts'> -> EPSILON
+<declaration>-> <dtypes> <var>
+<select> -> <if> <exp> <body>
+<iteration> -> <while> <rel-exp> <body> 
+<rel-exp> -> <operand> <rel-op> <operand>
+<body> -> <open-curlybrases> <stmts> <close-curlybrases>
 <dtypes> -> <int>
 <dtypes> -> <string>
-<dtypes> -> <boolean>
+<log-op> -> <boolean>
 <stmt> -> <declaration>
 <stmt> -> <assign>
 <stmt> -> <iteration>
 <stmt> -> <select>
 <stmt> -> <output>
-<stmt> -> <loops>
 <cond> -> <boolean>
 <bolean> -> <true> | <false>
 <op> -> <+>
@@ -21,10 +23,7 @@
 <op> -> <*>
 <op> -> </>
 <op> -> <=>
-<declaration>-> <dtypes> <name>
-<declaration> -> <dtypes> <name> <op> <val>
-<select> -> <if> <exp>  <open-curlybrases> <output> <close-curlbrases> 
-<loop> -> <exp>
-<exp> -> <name> 
+<op> -> <||>
+<op> -> <&&>
 <open-bracket> -> EPSILON
 <close-bracket>-> EPSILON
