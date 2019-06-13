@@ -1,0 +1,29 @@
+<prog> ? <mod> <begin> <body> <break>	<private>, <public>, <protected>
+<body> ? <declaration> <select>	<int>, <string>, <boolean>
+<select> ? <assign> <input> <stmt>	<assign>
+<select> ? <if> <exp> <op> <exp> <open-bracket> <output> <close-bracket>	<if>
+<loops ? <do> <cond> <while> <cond>	<do>
+<mod> ? <private>	<private>
+<mod> ? <public>	<public>
+<mod> ? <protected>	<protected>
+<dtypes> ? <int>	<int>
+<dtypes> ? <string>	<string>
+<dtypes> ? <boolean>	<boolean>
+<stmt> ? <declaration>	<int>, <string>, <boolean>
+<stmt> ? <assign>	<assign>
+<stmt> ? <iteration>	<iteration>
+<stmt> ? <select>	<assign>, <if>
+<stmt> ? <input>	<input>
+<stmt> ? <output>	<output>
+<stmt> ? <loops>	<loops>
+<cond> ? <boolean>	<boolean>
+<bolean> ? <true>	<true>
+<bolean> ? <false>	<false>
+<op> ? <+>	<+>
+<op> ? <?	<->
+<op> ? <*>	<*>
+<op> ? </>	</>
+<op> ? <=>	<=>
+<declaration> ? <dtypes> <name> <op>	<int>, <string>, <boolean>
+<open-bracket> ? e	<output>
+<close-bracket> ? e	<break>

@@ -1,0 +1,40 @@
+Non-Terminal Symbol	First Set
+<begin>	<begin>
+<break>	<break>
+<assign>	<assign>
+<input>	<input>
+<if>	<if>
+<exp>	<exp>
+<output>	<output>
+<do>	<do>
+<while>	<while>
+<private>	<private>
+<public>	<public>
+<protected>	<protected>
+<int>	<int>
+<string>	<string>
+<boolean>	<boolean>
+<iteration>	<iteration>
+<loops>	<loops>
+<true>	<true>
+<false>	<false>
+<+>	<+>
+<->	<->
+<*>	<*>
+</>	</>
+<=>	<=>
+<name>	<name>
+e	e
+<select>	<assign>, <if>
+<loops	<do>
+<mod>	<private>, <public>, <protected>
+<dtypes>	<int>, <string>, <boolean>
+<stmt>	<assign>, <iteration>, <input>, <output>, <loops>, <int>, <string>, <boolean>, <if>
+<cond>	<boolean>
+<bolean>	<true>, <false>
+<op>	<+>, <->, <*>, </>, <=>
+<open-bracket>	e
+<close-bracket>	e
+<prog>	<private>, <public>, <protected>
+<declaration>	<int>, <string>, <boolean>
+<body>	<int>, <string>, <boolean>

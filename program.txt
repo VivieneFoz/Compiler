@@ -1,0 +1,33 @@
+public calculator 
+begin
+ printf "welcome to basic calculator"
+ printf "choose among the following operators(a,b,c,d):"
+	
+	string op
+	int x
+	int y
+	boolean ans
+
+while ans = y {
+
+	string op = nextString();
+	int x = nextInt();
+	int y = nextInt()
+
+	printf "a. addition (+)"
+	printf "b. subtraction (-)"
+	printf "c. multiplication (*)"
+	printf "d. division (/)"
+
+if op = a{
+	printf "what is your first number" + x
+	printf "what is your second number" + y
+	printf x + y
+}
+fi
+	printf "do you want to calculate again [y/n]?"
+	
+	ans = n
+}
+printf "thank you"
+break	

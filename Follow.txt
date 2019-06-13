@@ -1,0 +1,13 @@
+<prog>	$
+<body>	<break>
+<select>	<break>
+<loops	
+<mod>	<begin>
+<dtypes>	<name>
+<stmt>	<break>
+<cond>	<while>
+<bolean>	
+<op>	<exp>, <assign>, <if>, <break>
+<declaration>	<assign>, <if>, <break>
+<open-bracket>	<output>
+<close-bracket>	<break>
