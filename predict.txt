@@ -1,29 +1,35 @@
-<prog> ? <mod> <begin> <body> <break>	<private>, <public>, <protected>
-<body> ? <declaration> <select>	<int>, <string>, <boolean>
-<select> ? <assign> <input> <stmt>	<assign>
-<select> ? <if> <exp> <op> <exp> <open-bracket> <output> <close-bracket>	<if>
-<loops ? <do> <cond> <while> <cond>	<do>
-<mod> ? <private>	<private>
-<mod> ? <public>	<public>
-<mod> ? <protected>	<protected>
-<dtypes> ? <int>	<int>
-<dtypes> ? <string>	<string>
-<dtypes> ? <boolean>	<boolean>
-<stmt> ? <declaration>	<int>, <string>, <boolean>
-<stmt> ? <assign>	<assign>
-<stmt> ? <iteration>	<iteration>
-<stmt> ? <select>	<assign>, <if>
-<stmt> ? <input>	<input>
-<stmt> ? <output>	<output>
-<stmt> ? <loops>	<loops>
-<cond> ? <boolean>	<boolean>
-<bolean> ? <true>	<true>
-<bolean> ? <false>	<false>
-<op> ? <+>	<+>
-<op> ? <?	<->
-<op> ? <*>	<*>
-<op> ? </>	</>
-<op> ? <=>	<=>
-<declaration> ? <dtypes> <name> <op>	<int>, <string>, <boolean>
-<open-bracket> ? e	<output>
-<close-bracket> ? e	<break>
+1	<prog> ? <mod>	<public>
+2	<mod> ? <public> <begin> <stmts> <break>	<public>
+3	<stmts> ? <stmt> <stmts'>	<output>, <int>, <string>, <while>, <var>, <if>
+4	<stmts'> ? <stmt> <stmts'>	<output>, <int>, <string>, <while>, <var>, <if>
+5	<stmts'> ? e	<close-curlybrases>, <break>
+6	<stmt> ? <declaration>	<int>, <string>
+7	<stmt> ? <assign>	<var>
+8	<stmt> ? <iteration>	<while>
+9	<stmt> ? <select>	<if>
+10	<stmt> ? <output>	<output>
+11	<declaration> ? <dtypes> <var>	<int>, <string>
+12	<assign> ? <var> <=> <exp>	<var>
+13	<exp> ? <input>	<nextInt()>, <nextString()>
+14	<exp> ? <iden> <op> <iden>	<iden>
+15	<input> ? <nextInt()>	<nextInt()>
+16	<input> ? <nextString()>	<nextString()>
+17	<select> ? <if> <rel-exp> <body>	<if>
+18	<iteration> ? <while> <rel-exp> <body>	<while>
+19	<rel-exp> ? <operand> <rel-op> <operand>	<operand>
+20	<body> ? <open-curlybrases> <stmts> <close-curlybrases>	<open-curlybrases>
+21	<dtypes> ? <int>	<int>
+22	<dtypes> ? <string>	<string>
+23	<op> ? <+>	<+>
+24	<op> ? <?	<->
+25	<op> ? <*>	<*>
+26	<op> ? </>	</>
+27	<op> ? <%>	<%>
+28	<op> ? <inc>	<inc>
+29	<op> ? <dec>	<dec>
+30	<rel-op> ? <=>	<=>
+31	<rel-op> ? <lt>	<lt>
+32	<rel-op> ? <gt>	<gt>
+33	<rel-op> ? <egt>	<egt>
+34	<rel-op> ? <elt>	<elt>
+35	<rel-op> ? <neq>	<neq>
