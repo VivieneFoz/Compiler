@@ -1,40 +1,45 @@
-Non-Terminal Symbol	First Set
+<public>	<public>
 <begin>	<begin>
 <break>	<break>
-<assign>	<assign>
-<input>	<input>
-<if>	<if>
-<exp>	<exp>
+e	e
 <output>	<output>
-<do>	<do>
+<var>	<var>
+<=>	<=>
+<iden>	<iden>
+<nextInt()>	<nextInt()>
+<nextString()>	<nextString()>
+<if>	<if>
 <while>	<while>
-<private>	<private>
-<public>	<public>
-<protected>	<protected>
+<operand>	<operand>
+<open-curlybrases>	<open-curlybrases>
+<close-curlybrases>	<close-curlybrases>
 <int>	<int>
 <string>	<string>
-<boolean>	<boolean>
-<iteration>	<iteration>
-<loops>	<loops>
-<true>	<true>
-<false>	<false>
 <+>	<+>
 <->	<->
 <*>	<*>
 </>	</>
-<=>	<=>
-<name>	<name>
-e	e
-<select>	<assign>, <if>
-<loops	<do>
-<mod>	<private>, <public>, <protected>
-<dtypes>	<int>, <string>, <boolean>
-<stmt>	<assign>, <iteration>, <input>, <output>, <loops>, <int>, <string>, <boolean>, <if>
-<cond>	<boolean>
-<bolean>	<true>, <false>
-<op>	<+>, <->, <*>, </>, <=>
-<open-bracket>	e
-<close-bracket>	e
-<prog>	<private>, <public>, <protected>
-<declaration>	<int>, <string>, <boolean>
-<body>	<int>, <string>, <boolean>
+<%>	<%>
+<inc>	<inc>
+<dec>	<dec>
+<lt>	<lt>
+<gt>	<gt>
+<egt>	<egt>
+<elt>	<elt>
+<neq>	<neq>
+<mod>	<public>
+<stmts'>	e, <output>, <int>, <string>, <while>, <var>, <if>
+<stmt>	<output>, <int>, <string>, <while>, <var>, <if>
+<assign>	<var>
+<exp>	<iden>, <nextInt()>, <nextString()>
+<input>	<nextInt()>, <nextString()>
+<select>	<if>
+<iteration>	<while>
+<rel-exp>	<operand>
+<body>	<open-curlybrases>
+<dtypes>	<int>, <string>
+<op>	<+>, <->, <*>, </>, <%>, <inc>, <dec>
+<rel-op>	<=>, <lt>, <gt>, <egt>, <elt>, <neq>
+<prog>	<public>
+<declaration>	<int>, <string>
+<stmts>	<output>, <int>, <string>, <while>, <var>, <if>
