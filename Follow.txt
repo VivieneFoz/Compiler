@@ -1,13 +1,16 @@
 <prog>	$
-<body>	<break>
-<select>	<break>
-<loops	
-<mod>	<begin>
-<dtypes>	<name>
-<stmt>	<break>
-<cond>	<while>
-<bolean>	
-<op>	<exp>, <assign>, <if>, <break>
-<declaration>	<assign>, <if>, <break>
-<open-bracket>	<output>
-<close-bracket>	<break>
+<mod>	$
+<stmts>	<close-curlybrases>, <break>
+<stmts'>	<close-curlybrases>, <break>
+<stmt>	<output>, <int>, <string>, <while>, <var>, <if>, <close-curlybrases>, <break>
+<declaration>	<output>, <int>, <string>, <while>, <var>, <if>, <close-curlybrases>, <break>
+<assign>	<output>, <int>, <string>, <while>, <var>, <if>, <close-curlybrases>, <break>
+<exp>	<output>, <int>, <string>, <while>, <var>, <if>, <close-curlybrases>, <break>
+<input>	<output>, <int>, <string>, <while>, <var>, <if>, <close-curlybrases>, <break>
+<select>	<output>, <int>, <string>, <while>, <var>, <if>, <close-curlybrases>, <break>
+<iteration>	<output>, <int>, <string>, <while>, <var>, <if>, <close-curlybrases>, <break>
+<rel-exp>	<open-curlybrases>
+<body>	<output>, <int>, <string>, <while>, <var>, <if>, <close-curlybrases>, <break>
+<dtypes>	<var>
+<op>	<iden>
+<rel-op>	<operand>
