@@ -3,27 +3,33 @@
 <stmts> -> <stmt> <stmts'> 
 <stmts'> -> <stmt> <stmts'>
 <stmts'> -> EPSILON
-<declaration>-> <dtypes> <var>
-<select> -> <if> <exp> <body>
-<iteration> -> <while> <rel-exp> <body> 
-<rel-exp> -> <operand> <rel-op> <operand>
-<body> -> <open-curlybrases> <stmts> <close-curlybrases>
-<dtypes> -> <int>
-<dtypes> -> <string>
-<log-op> -> <boolean>
 <stmt> -> <declaration>
 <stmt> -> <assign>
 <stmt> -> <iteration>
 <stmt> -> <select>
 <stmt> -> <output>
-<cond> -> <boolean>
-<bolean> -> <true> | <false>
+<declaration> -> <dtypes> <var>
+<assign> -> <var> <=> <exp>
+<exp> -> <input>
+<input> -> <nextInt()>
+<input> -> <nextString()>
+<exp> -> <iden> <op> <iden>
+<select> -> <if> <rel-exp> <body>
+<iteration> -> <while> <rel-exp> <body> 
+<rel-exp> -> <operand> <rel-op> <operand>
+<body> -> <open-curlybrases> <stmts> <close-curlybrases>
+<dtypes> -> <int>
+<dtypes> -> <string>
 <op> -> <+>
 <op> -> <->
 <op> -> <*>
 <op> -> </>
-<op> -> <=>
-<op> -> <||>
-<op> -> <&&>
-<open-bracket> -> EPSILON
-<close-bracket>-> EPSILON
+<op> -> <%>
+<op> -> <inc>
+<op> -> <dec>
+<rel-op> -> <=>
+<rel-op> -> <lt>
+<rel-op> -> <gt>
+<rel-op> -> <egt>
+<rel-op> -> <elt>
+<rel-op> -> <neq>
