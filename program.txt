@@ -5,9 +5,10 @@ printf "Number is visible by 2"
 	int x
 	
 while x % 2 != 0 {
-	x = x+1
+	x
+	x = x inc 1 //(x++)
     if x % 2 = 0 {
-	  printf " x is visible by 2
+	  printf " x is visible by 2"
     }
 
 }
