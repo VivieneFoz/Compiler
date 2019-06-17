@@ -11,13 +11,16 @@
 <declaration> -> <dtypes> <var>
 <assign> -> <var> <=> <exp>
 <exp> -> <input>
+<exp> -> <term> <op> <term>
+<term> -> <var> | <const>
 <input> -> <nextInt()>
 <input> -> <nextString()>
-<exp> -> <iden> <op> <iden>
+<exp> -> <var> <op> <var>
 <select> -> <if> <rel-exp> <body>
 <iteration> -> <while> <rel-exp> <body> 
 <rel-exp> -> <operand> <rel-op> <operand>
-<body> -> <open-curlybrases> <stmts> <close-curlybrases>
+<body> -> <open-curlybraces> <stmts> <close-curlybraces>
+<output> -> <printf> <title>
 <dtypes> -> <int>
 <dtypes> -> <string>
 <op> -> <+>
@@ -25,8 +28,6 @@
 <op> -> <*>
 <op> -> </>
 <op> -> <%>
-<op> -> <inc>
-<op> -> <dec>
 <rel-op> -> <=>
 <rel-op> -> <lt>
 <rel-op> -> <gt>
