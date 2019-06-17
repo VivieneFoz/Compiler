@@ -1,18 +1,18 @@
-<add> -> +
-<multiply> -> *
-<division> -> /
-<modulo> -> %
-<subtraction> -> -
-<increment> -> inc 
-<decrement> -> dec
-<equal> -> =
+<+> -> +
+<*> -> *
+</> -> /
+<%> -> %
+<-> -> -
+<=> -> =
 <lt> -> lessthan
 <gt> -> greaterthan
 <egt> -> greaterthanorequal
 <elt> -> lessthanorequal
+<neq> -> notequal
 <const> -> [0-9]+
 <begin> -> begin
 <break> -> break
-<iden> -> [a-z][a-z0-9_]*
-
-
+<var> -> [a-z][a-z0-9_]*
+<title> -> "[a-zA-Z0-9 {}.,=+-/*!#]+"
+<int> -> int
+<string> -> string
