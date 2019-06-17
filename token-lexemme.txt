@@ -1,0 +1,18 @@
+<add> -> +
+<multiply> -> *
+<division> -> /
+<modulo> -> %
+<subtraction> -> -
+<increment> -> inc 
+<decrement> -> dec
+<equal> -> =
+<lt> -> lessthan
+<gt> -> greaterthan
+<egt> -> greaterthanorequal
+<elt> -> lessthanorequal
+<const> -> [0-9]+
+<begin> -> begin
+<break> -> break
+<iden> -> [a-z][a-z0-9_]*
+
+
