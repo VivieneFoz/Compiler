@@ -1,7 +1,7 @@
 <public>	<public>
 <begin>	<begin>
 <break>	<break>
-e	e
+ε	ε
 <output>	<output>
 <var>	<var>
 <=>	<=>
@@ -28,7 +28,7 @@ e	e
 <elt>	<elt>
 <neq>	<neq>
 <mod>	<public>
-<stmts'>	e, <output>, <int>, <string>, <while>, <var>, <if>
+<stmts'>	ε, <output>, <int>, <string>, <while>, <var>, <if>
 <stmt>	<output>, <int>, <string>, <while>, <var>, <if>
 <assign>	<var>
 <exp>	<iden>, <nextInt()>, <nextString()>
